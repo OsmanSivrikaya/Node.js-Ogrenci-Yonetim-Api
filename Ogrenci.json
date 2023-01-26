@@ -1,0 +1,21 @@
+[{
+  "_id": {
+    "$oid": "63d24ba5a80db96fa6574d7f"
+  },
+  "ad": "Osman",
+  "soyAd": "Sivrikaya",
+  "sinifId": {
+    "$oid": "63d243b72592f55298095a85"
+  },
+  "createdAt": {
+    "$date": {
+      "$numberLong": "1674726309257"
+    }
+  },
+  "updatedAt": {
+    "$date": {
+      "$numberLong": "1674726309257"
+    }
+  },
+  "__v": 0
+}]
