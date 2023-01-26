@@ -1,0 +1,209 @@
+{
+	"info": {
+		"_postman_id": "9f8c6a89-e474-451a-b7a4-01c278dbce2d",
+		"name": "Case",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "Öğrenci Ekle",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\"ad\": \"Osman\", \"soyAd\": \"Sivrikaya\", \"sinifId\": \"63d243b72592f55298095a85\"}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:5000/api/ogrenci",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "5000",
+					"path": [
+						"api",
+						"ogrenci"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Öğrenci Getir",
+			"request": {
+				"method": "GET",
+				"header": []
+			},
+			"response": []
+		},
+		{
+			"name": "Öğrecileri Getir",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:5000/api/ogrenci?page=1",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "5000",
+					"path": [
+						"api",
+						"ogrenci"
+					],
+					"query": [
+						{
+							"key": "page",
+							"value": "1"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Öğrenci Güncelle",
+			"request": {
+				"method": "PUT",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \r\n\"ad\":\"Osmanm\",\r\n\"soyAd\":\"Sivrikaya\",\r\n\"sinifId\":\"63d243b72592f55298095a85\",\r\n\"ogretmenId\":\"63d26815e259abe2b1f66090\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:5000/api/ogrenci/63d26963392c3ff2b0689c95",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "5000",
+					"path": [
+						"api",
+						"ogrenci",
+						"63d26963392c3ff2b0689c95"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Öğrenci Sil",
+			"request": {
+				"method": "DELETE",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:5000/api/ogrenci/63d26963392c3ff2b0689c95",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "5000",
+					"path": [
+						"api",
+						"ogrenci",
+						"63d26963392c3ff2b0689c95"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Sınıf Ekle",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"name\":\"12/A\",\r\n    \"ogrenci\":[]\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:5000/apiSinif/sinif",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "5000",
+					"path": [
+						"apiSinif",
+						"sinif"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Sınıfları Getir",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:5000/apiSinif/sinif",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "5000",
+					"path": [
+						"apiSinif",
+						"sinif"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Öğretmen  Ekle",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"ogretmenAd\":\"HASAN\",\r\n    \"ogretmenSoyAd\":\"DEMİR\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:5000/apiOgretmen/ogretmen",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "5000",
+					"path": [
+						"apiOgretmen",
+						"ogretmen"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Öğretmenleri Getir",
+			"request": {
+				"method": "GET",
+				"header": []
+			},
+			"response": []
+		}
+	]
+}
